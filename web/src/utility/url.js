@@ -1,9 +1,9 @@
-const url = 'https://api-securitree.herokuapp.com/';
+const url = 'https://api-securitree.herokuapp.com';
 
 const route = {
     hierarchy: url+'/hierarchy',
     login: url+'/login',
-    unlockDoor: url+'door/unlock',
+    unlockDoor: url+'/door/unlock',
     lockDoor: url+'/door/lock'
 }
 
