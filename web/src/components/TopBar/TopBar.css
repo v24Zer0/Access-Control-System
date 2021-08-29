@@ -1,0 +1,12 @@
+.bar {
+    background-color: rgb(32, 32, 32);
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.tree {
+    color: rgb(39, 182, 230)
+}

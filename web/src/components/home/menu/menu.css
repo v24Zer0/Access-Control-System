@@ -1,0 +1,18 @@
+.menu {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+}
+
+.nav-button {
+    color: white;
+    font-size: large;
+}
+
+.nav-button:hover {
+    color: rgb(39, 182, 230);
+}
+
+.active {
+    color: rgb(39, 182, 230);
+}

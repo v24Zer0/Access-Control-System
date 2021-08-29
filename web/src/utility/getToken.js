@@ -1,0 +1,5 @@
+function getToken() {
+    
+}  
+
+export { getToken };

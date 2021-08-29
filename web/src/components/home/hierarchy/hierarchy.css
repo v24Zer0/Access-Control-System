@@ -1,0 +1,76 @@
+#hierarchy {
+    padding: 1%;
+}
+
+#rootArea {
+    color: blue;
+    margin-left: 1%;
+}
+
+.rootChildren {
+    margin-left: 2%;
+}
+
+.areaChild {
+    margin-left: 2%;
+}
+
+.area {
+    color: black;
+    font-weight: bold;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.door {
+    margin-left: 1%;
+}
+
+.rule {
+    margin-left: 1%;
+}
+
+.areaChildren {
+    margin-left: 2%;
+}
+
+.doorOpen {
+    color: rgb(39, 212, 39);
+}   
+
+.doorClosed {
+    color: red;
+}
+
+#loading {
+    text-align: center;
+    width: 100%;
+    height: 100%;  
+    padding: 10vmin;
+}
+
+.refresh-button {
+    margin-left: 90%;
+    margin-top: 1%;
+    position: absolute;
+    z-index: 1;
+}
+
+.loadingImg {
+    width: 20vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .loadingImg {
+      animation: loading-spin infinite 5s linear;
+    }
+}
+
+@keyframes loading-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

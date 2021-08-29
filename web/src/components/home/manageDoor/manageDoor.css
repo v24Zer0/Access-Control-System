@@ -1,0 +1,28 @@
+.doorPage {
+    margin-top: 2%;
+    text-align: center;
+}
+
+h4 {
+    margin: 2%;
+}
+
+#unlock  {
+    width: 30%;
+    margin: auto;
+}
+
+input {
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+#lock {
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.update-door-btn {
+    width: 30%;
+}
