@@ -1,4 +1,4 @@
-const url = 'http://localhost:3001'
+const url = 'https://api-securitree.herokuapp.com/';
 
 const route = {
     hierarchy: url+'/hierarchy',

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { buildHierarchy } from "../../../controller/home.controller";
+import route from "../../../utility/url";
 import "./hierarchy.css";
 
 function Hierarchy() {
@@ -11,7 +12,7 @@ function Hierarchy() {
 
     async function fetchData() {
         try {
-            const res = await fetch('http://localhost:3001/hierarchy', {
+            const res = await fetch(route.hierarchy, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }

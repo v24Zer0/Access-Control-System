@@ -3,9 +3,12 @@
  * @param {Object} userDetails Contains details of the user, namely username and password
  * @returns {boolean} True if details are valid, False if anything went wrong
  */
+
+import route from "../utility/url";
+
 async function validLogin(username, password) {
     try {
-        const res = await fetch('http://localhost:3001/login', {
+        const res = await fetch(route.login, {
             method: 'post',
             headers: {
                 'Accept': '*/*',

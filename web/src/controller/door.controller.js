@@ -1,13 +1,15 @@
+import route from "../utility/url";
+
 async function updateDoor(type, door) {
     let url = '';
     if(type === 'unlock') {
-        url = type;
+        url = route.unlockDoor;
     }
     else if(type === 'lock') {
-        url = type;
+        url = route.lockDoor;
     }
     try {
-        const res = await fetch(`http://localhost:3001/door/${url}`, {
+        const res = await fetch(url, {
             method: 'post',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`,
