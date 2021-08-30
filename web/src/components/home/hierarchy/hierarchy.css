@@ -26,6 +26,12 @@
     margin-left: 1%;
 }
 
+.door:hover {
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .rule {
     margin-left: 1%;
 }
@@ -62,7 +68,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .loadingImg {
-      animation: loading-spin infinite 5s linear;
+      animation: loading-spin infinite 4s linear;
     }
 }
 

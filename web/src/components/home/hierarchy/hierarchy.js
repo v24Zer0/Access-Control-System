@@ -5,9 +5,6 @@ import "./hierarchy.css";
 
 function Hierarchy() {
     const [loading, setLoading] = useState(true);
-    // const [root, setRoot] = useState({});
-    // const [areas, setAreas] = useState({});
-    // const [doors, setDoors] = useState({});
     const [content, setContent] = useState([]);
 
     async function fetchData() {
@@ -18,12 +15,8 @@ function Hierarchy() {
                 }
             });
             const data = await res.json();
-            // setRoot(data['root']);
-            // setAreas(data['areas']);
-            // setDoors(data['doors']);
             const hierarchy = renderHierarchy(data.root, data.areas, data.doors);
             setContent(hierarchy);
-            console.log(hierarchy);
             setLoading(false);
         } catch(error) {
             console.log(error);
