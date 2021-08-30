@@ -17,7 +17,7 @@ function Menu(props) {
                     <button className={activeClass ? active : inactive} onClick={() => {props.updatePage(1); setActive(1);}}>Unlock/Lock door</button>
                 </li>
                 <li>
-                    <button className="btn nav-button" onClick={() => props.updateUser(false)}>Logout</button>
+                    <button className="btn nav-button" onClick={() => { localStorage.clear(); props.updateUser(false) } }>Logout</button>
                 </li>
             </ul>
         </div>
