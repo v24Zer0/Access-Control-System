@@ -9,9 +9,10 @@ function buildHierarchy(root, areas, doors) {
         doorNames.push(<span className='door' key={door}>{doors[door].name}
         <span className={doors[door].status === 'open' ? 'doorOpen' : 'doorClosed'}> ({doors[door].status})</span>
         </span>);
-        for(let rule of doors[door].access_rules) {
-            rules.push(<span className='rule' key={rule+doors[door].name}>{rule}</span>);
-        }
+    }
+    for(let rule in root.access_rules) {
+        console.log(rule);
+        rules.push(<span className='rule' key={root.name+rule}>{rule}</span>);
     }
     let childAreas = [];
     for(let child of root.child_area_ids) {
@@ -31,9 +32,9 @@ function buildRecursive(root, areas, doors, content) {
         doorNames.push(<span className='door' key={door}>{doors[door].name}
         <span className={doors[door].status === 'open' ? 'doorOpen' : 'doorClosed'}> ({doors[door].status})</span>
         </span>);
-        for(let rule of doors[door].access_rules) {
-            rules.push(<span className='rule' key={rule+doors[door].name}>{rule}</span>);
-        }
+    }
+    for(let rule in root.access_rules) {
+        rules.push(<span className='rule' key={root.name+rule}>{rule}</span>);
     }
     content.push(<div className='areaChildren' key={root.name+' doors+rules'}><div key={root.name+' child'}>[Doors] {doorNames}</div><div key={root.name+'rules'}>[Access_Rules] {rules}</div></div>);
     // content.push();
