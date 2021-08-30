@@ -9,7 +9,12 @@ node_modules/
 /coverage
 
 # production
-/build
+build/
+
+# firebase
+.firebase/
+.firebaserc
+firebase.json
 
 # misc
 .env
