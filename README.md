@@ -15,6 +15,8 @@ The database consists of collections for users, areas, doors and access_rules. T
 
 ## Technologies
 
+I have implemented the MERN stack for this project. MERN stands for MongoDB, Express, React, Node. The MERN stack is the ideal approach to working with JavaScript and JSON. It also allows you to easily implement a 3-tier architecture entirely using JavaScript and JSON.
+
 ### Web App
 I decided to use React to build the user interface. React makes it easy to create an interactive UI by efficiently updating and rendering components when data changes. React is a technology I am currently learning and this project gave me an opportunity to improve my knowleedge of React. 
 
