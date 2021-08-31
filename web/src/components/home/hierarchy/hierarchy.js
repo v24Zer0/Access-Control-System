@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { buildHierarchy } from "../../../controller/home.controller";
+import { buildHierarchy } from "../../../controller/hierarchy.controller";
 import route from "../../../utility/url";
 import "./hierarchy.css";
 
