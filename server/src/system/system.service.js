@@ -16,10 +16,13 @@ function addSystemData(systemData) {
             default: 
                 break;
         }
-        console.log(key);
     });
 }
 
+/**
+ * Parses the system_data object submitted by the user and selects the areas, doors and access_rules and adds them separately
+ * @param {Object} systemData 
+ */
 function splitAndAddData(systemData) {
     Object.keys(systemData).forEach((key) => {
         switch(key) {
@@ -35,7 +38,6 @@ function splitAndAddData(systemData) {
             default: 
                 break;
         }
-        console.log(key);
     });
 }
 

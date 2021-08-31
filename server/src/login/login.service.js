@@ -7,6 +7,11 @@ const Result = {
     INVALID: 2
 }
 
+/**
+ * Verifies the details provided by the user
+ * @param {*} userDetails 
+ * @returns Result of login
+ */
 async function login(userDetails) {
     if(!userDetails.username || !userDetails.password) {
         return Result.INVALID;

@@ -37,4 +37,4 @@ async function validLogin(username, password) {
     }
 }
 
-export {validLogin};
+export { validLogin };

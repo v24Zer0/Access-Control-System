@@ -1,3 +1,10 @@
+/**
+ * Creates hash table for areas and doors for easier and faster access in web app
+ * @param {*} areas 
+ * @param {*} doors 
+ * @param {*} access_rules 
+ * @returns array of updated areas and doors
+ */
 function setHierarchyKeys(areas, doors, access_rules) {
     const indexedAreas = setAreaKeys(areas);
     const indexedDoors = setDoorKeys(doors, indexedAreas);
@@ -5,6 +12,11 @@ function setHierarchyKeys(areas, doors, access_rules) {
     return [indexedAreas, indexedDoors];
 }
 
+/**
+ * Creates hashtable of areas using area._id as the key
+ * @param {*} areas 
+ * @returns Hashtable object for areas 
+ */
 function setAreaKeys(areas) {
     const indexedAreas = {};
     for(area of areas) {
@@ -19,6 +31,12 @@ function setAreaKeys(areas) {
     return indexedAreas;
 }
 
+/**
+ * Creates hashtable of doors using door._id as the key
+ * @param {*} doors 
+ * @param {*} areas 
+ * @returns Hashtable object for doors 
+ */
 function setDoorKeys(doors, areas) {
     const indexedDoors = {};
     for(key in doors) {
@@ -33,6 +51,13 @@ function setDoorKeys(doors, areas) {
     return indexedDoors;
 }
 
+/**
+ * Creates hashtable of access rules for each area
+ * @param {*} access_rules 
+ * @param {*} doors 
+ * @param {*} areas 
+ * @returns doors object
+ */
 function setAccesRulesKeys(access_rules, doors, areas) {
     for(rules of access_rules) {
         for(door of rules.doors) {
@@ -42,6 +67,11 @@ function setAccesRulesKeys(access_rules, doors, areas) {
     return doors;
 }
 
+/**
+ * Finds the area with a parent_area of null
+ * @param {*} areas 
+ * @returns area with parent_area of null
+ */
 function getRootArea(areas) {
     for(key in areas) {
         if(areas[key].parent_area == null)

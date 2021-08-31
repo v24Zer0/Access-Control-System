@@ -3,6 +3,10 @@ const Door = require('../model/door');
 const Access = require('../model/access');
 const { setHierarchyKeys, getRootArea } = require("../utility/buildHierarchy");
 
+/**
+ * Constructs hierarachy object to be used to construct tree view of system 
+ * @returns Object including root, areas and doors
+ */
 async function getHierarchy() {
     const areas = await getAreas();
     const doors = await getDoors();

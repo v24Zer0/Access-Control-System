@@ -4,7 +4,6 @@ const systemService = require('./system.service');
 
 const router = Router();
 
-//verifyToken
 router.post('/system', verifyToken, (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     systemService.addSystemData(req.body);

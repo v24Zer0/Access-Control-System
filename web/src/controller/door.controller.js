@@ -26,4 +26,4 @@ async function updateDoor(type, door) {
     }
 }
 
-export {updateDoor};
+export { updateDoor };
