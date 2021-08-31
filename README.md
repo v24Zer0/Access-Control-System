@@ -29,12 +29,12 @@ MongoDB was chosen as the database for the project. MongoDB is one of the most p
 ## Deployment
 
 ### Web App 
-The web app makes use of Firebase hosting. Firebase is a platform for creating mobile and web apps. Firebase includes products for authentication, data storage, analytics and hosting. Initially, I intended to make use of authentication and firebase's realtime database, however, I decided to implement these myself and to make use of MongoDB. Given firebase's flexibility and my prior experience, I decided that firebase hosting would be a good tool to use for the web app.  
-https://securitree-b003c.web.app/
+The web app makes use of Firebase hosting. Firebase is a platform for creating mobile and web apps. Firebase includes products for authentication, data storage, analytics and hosting. Initially, I intended to make use of authentication and firebase's realtime database, however, I decided to implement these myself and to make use of MongoDB. Given firebase's flexibility and my prior experience, I decided that firebase hosting would be a good tool to use for the web app.   
+View the web app at https://securitree-b003c.web.app/
 
 ### Server
-The server has been hosted on Heroku. Heroku is a platform I recently started using. I wanted to experiment with multiple cloud platforms for this project. I decided to split the web app and server so these components could be developed in isolation.
-https://api-securitree.herokuapp.com/
+The server has been hosted on Heroku. Heroku is a platform I recently started using. I wanted to experiment with multiple cloud platforms for this project. I decided to split the web app and server so these components could be developed in isolation.  
+Access the server at https://api-securitree.herokuapp.com/
 
 ### Database
 MongoDB Atlas was used for the database. Atlas is a global multi-cloud database service with unmatched data distribution and mobility. It offers modern database capabilities, data security and performance optimisations.
