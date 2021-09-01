@@ -10,7 +10,6 @@ Method: GET,
 endpoint: /hierarchy,
 Authorization: Bearer <token>
 
-
 response.status: 200, 
 response.body: {
     root: {
@@ -81,6 +80,7 @@ To unlock door:
 ```
 Method: POST,
 endpoint: /door/unlock,
+Authorization: Bearer <token>,
 request.body: {
     door: door_id
 }
@@ -114,6 +114,7 @@ To lock door:
 ```
 Method: POST,
 endpoint: /door/lock,
+Authorization: Bearer <token>,
 request.body: {
     door: door_id
 }
@@ -149,6 +150,7 @@ This route makes use of authentication by way of a bearer token.
 ```
 Method: POST,
 endpoint: /system,
+Authorization: Bearer <token>,
 request.body: {
     system_data: {
         areas: [

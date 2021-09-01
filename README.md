@@ -6,9 +6,10 @@ SecuriTree is an access control management application that provides a visual tr
 
 ## Web
 The web app allows a user to interact with the system. A user is able to login/logout, view the system hierarchy and manage the state of a door.
+A user is not able to view the home page before being authenticated.
 
 ## Server
-The server handles all requests from the web app. It handles authentication, building of the hierarchy and the updating of doors. It then sends apprpriate responses back to the web app.
+The server handles all requests from the web app. It handles authentication, building of the hierarchy and the updating of doors. It then sends appropriate responses back to the web app. All API endpoints besides login make use of a jwt token to verify the user.
 
 ## Database
 The database consists of collections for users, areas, doors and access_rules. The server is able to query the database to retrieve data which is then sent to the web app. 
@@ -18,10 +19,10 @@ The database consists of collections for users, areas, doors and access_rules. T
 I have implemented the MERN stack for this project. MERN stands for MongoDB, Express, React, Node. The MERN stack is the ideal approach to working with JavaScript and JSON. It also allows you to easily implement a 3-tier architecture entirely using JavaScript and JSON.
 
 ### Web App
-I decided to use React to build the user interface. React makes it easy to create an interactive UI by efficiently updating and rendering components when data changes. React is a technology I am currently learning and this project gave me an opportunity to improve my knowleedge of React. 
+I decided to use React to build the user interface. React makes it easy to create an interactive UI by efficiently updating and rendering components when data changes. React is a technology I am currently learning and this project gave me an opportunity to improve my knowledge of React. 
 
 ### Server
-Node.js was used to build the server. Node.js is an event-driven Javascript runtime designed to build scalable applications. By making use of Express.js, Node.js can be used to build a fast and sccalable API for receiving and sending requests. Node.js is a technology I am familiar with and it pairs well with React and MongoDB.
+Node.js was used to build the server. Node.js is an event-driven Javascript runtime designed to build scalable applications. By making use of Express.js, Node.js can be used to build a fast and scalable API for receiving and sending requests. Node.js is a technology I am familiar with and it pairs well with React and MongoDB.
 
 ### Database
 MongoDB was chosen as the database for the project. MongoDB is one of the most popular databases for modern apps. MongoDB's expressive query language is simple to learn and use. MongoDB is flexible, fast and highly scalable.
